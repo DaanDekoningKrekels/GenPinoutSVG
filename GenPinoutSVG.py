@@ -34,7 +34,13 @@ pagedimensions = {
   'A4-P' : (210, 297), # mm (portrait)
   'A4-L' : (297, 210), # mm (landscape)
   'A3-P' : (297, 420), # mm (portrait)
-  'A3-L' : (420, 297)  # mm (landscape)
+  'A3-L' : (420, 297), # mm (landscape)
+  'A2-P' : (420, 594), # mm (portrait)
+  'A2-L' : (594, 420), # mm (landscape)
+  'A1-P' : (594, 841), # mm (portrait)
+  'A1-L' : (841, 594), # mm (landscape)
+  'A0-P' : (841, 1189), # mm (portrait)
+  'A0-L' : (1189, 541), # mm (landscape)
 }
 
 FixedThemeEntries = ["DEFAULT", "TYPE", "GROUP"]
@@ -43,7 +49,7 @@ svg_filename = None
 dwg = None
 
 mode = "SETUP"       # Start in Setup Mode (Reading Setup Commands)
-pagetype='A4-L'      # Page Size
+pagetype='A0-L'      # Page Size
 pagedpi=300          # Page DPI
 pin_func_types=None  # Pin function types (Columns for Pin Description)
 
